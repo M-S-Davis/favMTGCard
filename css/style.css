@@ -70,8 +70,13 @@ section {
     text-align: center;
 }
 
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .card-image-container {
-    width: 40%;
+     height: 600px;
 }
 
 .card-display {

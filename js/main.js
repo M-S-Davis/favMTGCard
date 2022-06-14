@@ -3,6 +3,8 @@ document.querySelector("#clickMe").addEventListener("click", getCard);
 async function getCard(e) {
   e.preventDefault();
   const cardName = document.querySelector("#cardName").value;
+  const userName = document.querySelector("#userName").value;
+
   const res = await fetch(
     `https://api.magicthegathering.io/v1/cards?name=${cardName}`
   );
@@ -13,9 +15,11 @@ async function getCard(e) {
   console.log(data.cards[0].name);
 
   //Card image
-  document.querySelector("#card-image").src = data.cards[0].imageUrl;
+  document.querySelector(".card-image").src = data.cards[0].imageUrl;
   //Card Title
-  document.querySelector("#card-title").textContent = data.cards[0].name;
+  document.querySelector(".card-title").textContent = data.cards[0].name;
   //Card text
-  document.querySelector("#card-text").textContent = data.cards[0].text;
+  document.querySelector(".card-text").textContent = data.cards[0].text;
+  //User who added the card
+  document.querySelector(".user-name").textContent = userName;
 }
