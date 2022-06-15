@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "devmon": "nodemon server.js"
+  },
+  "name": "favmtgcard",
+  "description": "Write a short sentence or two about this project and what it does. Be sure to include a link and a screenshot (we're front end devs so we can actually see our work!).",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/M-S-Davis/favMTGCard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/M-S-Davis/favMTGCard/issues"
+  },
+  "homepage": "https://github.com/M-S-Davis/favMTGCard#readme"
+}

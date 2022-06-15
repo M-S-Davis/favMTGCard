@@ -3,8 +3,14 @@ const app = express();
 const cors = require("cors");
 const PORT = 8000;
 
+app.use(express.static(__dirname + "/public"));
+
 app.use(cors());
 
+app.get("/", (req, res) => {
+  res.sendFile(__dirname + "/index.html");
+});
+
 app.listen(process.env.PORT || PORT, () => {
-  console.log(`It gone get done on ${PORT}`);
+  console.log(`We running on ${PORT}`);
 });

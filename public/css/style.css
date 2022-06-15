@@ -45,10 +45,6 @@
 /* General Styles */
 /* ------------------------- */
 
-* {
-    border: 1px solid red;
-}
-
 html {
     scroll-behavior: smooth; /* YES PLEASE!!!! */
 }
@@ -89,6 +85,10 @@ section {
 img {
     max-width: 100%;
     display: block;
+}
+
+.user-name {
+    
 }
 
 /* ------------------------- */
