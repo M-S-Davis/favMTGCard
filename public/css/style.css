@@ -16,6 +16,9 @@
     --clr-dark: #000;
     --clr-accent: #teal;
 
+    /* Fonts */
+    --ff-primary: 'Sorts Mill Goudy', serif;
+
     /* Font Sizing */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -52,6 +55,7 @@ html {
 body {
     background: var(--clr-light);
     color: var(--clr-dark);
+    font-family: var(--ff-primary);
     margin: 0;
     font-size: var(--fs-body);
     line-height: 1.6;
@@ -64,54 +68,7 @@ section {
 
 .main-title {
     text-align: center;
-}
-
-.input-container {
-    display: flex;
-    flex-direction: column;
-}
-
-
-.card-display {
-    display: flex;
-    max-height: 800px;
-    border: 1px solid black;
-    margin: 1em, 3em;
-}
-
-.card_image-container {
-}
-
-.card-image {
-    height: 310px;
-    aspect-ratio: 223 / 310;
     padding: 1em;
-}
-
-.card_text--container {
-    padding: 1em;
-}
-
-.card_title--container {
-    display: flex;
-}
-
-.card-title {
-
-}
-
-.cmc {
-    border: 1px solid black;
-    border-radius: 100%;
-    padding: 0.25em;
-}
-
-.card-text {
-
-}
-
-.user-name {
-    margin-top: auto;
 }
 
 /* ------------------------- */
@@ -139,4 +96,81 @@ section {
 /* ------------------------- */
 /* Typography */
 /* ------------------------- */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+/* ------------------------- */
+/* Input Display */
+/* ------------------------- */
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------------- */
+/* Card Info Display */
+/* ------------------------- */
+
+.card-display {
+    display: flex;
+    max-height: 800px;
+    border: 1px solid black;
+    margin: 1em, 3em;
+}
+
+.card_image-container {
+    
+}
+
+.card-image {
+    height: 310px;
+    width: 223px;
+    aspect-ratio: 223 / 310;
+}
+
+.card_text--container {
+    padding: 1em;
+}
+
+.card_title--container {
+    border: 1px solid red;
+    display: flex;
+}
+
+.card-title {
+    justify-content: start;
+}
+
+.user-name {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.cmc {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0.25em;
+}
+
+.card-text {
+    font-weight: 300;
+}
 
