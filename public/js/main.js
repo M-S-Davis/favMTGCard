@@ -1,7 +1,7 @@
 document.querySelector("#clickMe").addEventListener("click", getCard);
 
 async function getCard(e) {
-  e.preventDefault();
+  // e.preventDefault();
   const cardName = document.querySelector("#cardName").value;
   const userName = document.querySelector("#userName").value;
 
@@ -18,8 +18,10 @@ async function getCard(e) {
   document.querySelector(".card-image").src = data.cards[0].imageUrl;
   //Card Title
   document.querySelector(".card-title").textContent = data.cards[0].name;
-  //Card text
-  document.querySelector(".card-text").textContent = data.cards[0].text;
   //User who added the card
   document.querySelector(".user-name").textContent = userName;
+  //Card text
+  document.querySelector(".card-text").textContent = data.cards[0].text;
+  //Card converted mana cost
+  document.querySelector(".cmc").textContent = data.cards[0].cmc;
 }

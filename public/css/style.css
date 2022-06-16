@@ -71,24 +71,47 @@ section {
     flex-direction: column;
 }
 
-.card-image-container {
-     height: 600px;
-}
 
 .card-display {
     display: flex;
-    max-height: 500px;
+    max-height: 800px;
     border: 1px solid black;
     margin: 1em, 3em;
 }
 
-img {
-    max-width: 100%;
-    display: block;
+.card_image-container {
+}
+
+.card-image {
+    height: 310px;
+    aspect-ratio: 223 / 310;
+    padding: 1em;
+}
+
+.card_text--container {
+    padding: 1em;
+}
+
+.card_title--container {
+    display: flex;
+}
+
+.card-title {
+
+}
+
+.cmc {
+    border: 1px solid black;
+    border-radius: 100%;
+    padding: 0.25em;
+}
+
+.card-text {
+
 }
 
 .user-name {
-    
+    margin-top: auto;
 }
 
 /* ------------------------- */
