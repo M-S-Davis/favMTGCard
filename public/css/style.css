@@ -61,11 +61,6 @@ body {
     line-height: 1.6;
 }
 
-section {
-    display: flex;
-    padding: 2em;
-}
-
 .main-title {
     text-align: center;
     padding: 1em;
@@ -129,11 +124,12 @@ h3 {
 /* Card Info Display */
 /* ------------------------- */
 
+.card-container {
+    display: flex;
+}
+
 .card-display {
     display: flex;
-    max-height: 800px;
-    border: 1px solid black;
-    margin: 1em, 3em;
 }
 
 .card_image-container {
@@ -147,21 +143,11 @@ h3 {
 }
 
 .card_text--container {
-    padding: 1em;
-}
-
-.card_title--container {
+    padding: 0 1em;
     border: 1px solid red;
-    display: flex;
 }
 
 .card-title {
-    justify-content: start;
-}
-
-.user-name {
-    justify-content: flex-end;
-    align-items: flex-end;
 }
 
 .cmc {
@@ -174,3 +160,6 @@ h3 {
     font-weight: 300;
 }
 
+.user-name {
+    text-align: end;
+}
